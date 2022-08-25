@@ -127,7 +127,7 @@ const CalendarMOdal = () => {
       className="modal"
       overlayClassName="modal-fondo"
     >
-      <h1> Nuevo evento </h1>
+      <h1>{activeEvents ? "Editar Evento" : " Nuevo Evento "}</h1>
       <hr />
       <form className="container" onSubmit={handleSubmitForm}>
         <div className="form-group mb-2">
