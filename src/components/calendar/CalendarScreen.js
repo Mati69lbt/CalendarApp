@@ -3,7 +3,6 @@ import Navbar from "../ui/Navbar";
 import { Calendar, momentLocalizer } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import { messages } from "../helpers/calendar-msg-es";
 
 import "moment/locale/es";
 import CalendarEvent from "./CalendarEvent";
@@ -13,6 +12,7 @@ import { uiOpenModal } from "../../actions/ui";
 import { eventClearActiveEvent, eventSetActive } from "../../actions/events";
 import AddNewFab from "../ui/AddNewFab";
 import DeleteEventFab from "../ui/DeleteEventFab";
+import { messages } from "../../helpers/calendar-msg-es";
 
 moment.locale("es");
 
