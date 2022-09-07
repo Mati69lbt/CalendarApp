@@ -26,8 +26,6 @@ const CalendarScreen = () => {
   const dispatch = useDispatch();
   const { events, activeEvents } = useSelector((state) => state.calendar);
   const { uid } = useSelector((state) => state.auth);
-  console.log(`uid: ${uid}`);
-  console.log(`events.user._id: ${{ events }}`);
 
   const [lastView, setLastView] = useState(
     localStorage.getItem("lastView") || "month"
@@ -60,8 +58,6 @@ const CalendarScreen = () => {
   // Santiago event.user._id: "63180abe0e0d49d67fb89f3a"
 
   const eventStyleGetter = (event, start, end, isSelected) => {
-    console.log(uid);
-    console.log(event.user._id);
     const style = {
       backgroundColor: uid === event.user._id ? "#367cf7" : "#465660",
       borderRadius: "0px",
