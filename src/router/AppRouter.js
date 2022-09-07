@@ -9,8 +9,6 @@ import "./loading.css";
 const AppRouter = () => {
   const dispatch = useDispatch();
   const { checking, uid } = useSelector((state) => state.auth);
-  console.log(!!uid);
-  console.log(checking);
 
   useEffect(() => {
     dispatch(startChecking());

@@ -5,7 +5,7 @@ const CalendarEvent = ({ event }) => {
   return (
     <div>
       <strong>{title}</strong>
-      <strong>{user.name}</strong>
+      <strong> - {user.name}</strong>
     </div>
   );
 };
